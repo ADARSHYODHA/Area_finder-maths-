@@ -1,0 +1,37 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <style type="text/css" media="all">
+    #Diameter {
+     color:rgb(255,127,127);
+     outline-color:rgb(66,57,255);
+     border-Diameter :50px;
+     border:solid ;
+     
+    }#label{
+     border-Diameter :20px;
+     color:rgb(146,141,255);
+     border:solid;
+     }
+  </style>
+  <title>Perimeter _FINDER</title>
+</head>
+<body>
+<h1>Perimeter _FINDER</h1>
+	<input oninput="Find_Perimeter();" placeholder="Enter_Diameter_of_circle"type="number" id="Diameter " />
+	       <button id="label">Your_Answer_will_be_shown_here</button>
+</body>
+<script type="text/javascript" charset="utf-8">
+ function Find_Perimeter() {
+ 
+  var Diameter = document.getElementById("Diameter ").value
+  var num = parseFloat(Diameter) ;
+  var pi = 22/7 ;
+  var formula  = pi*Diameter ;
+  
+  var label = document.getElementById("label").innerHTML=formula
+ }
+ </script>
+</html>
